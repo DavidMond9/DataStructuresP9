@@ -128,7 +128,7 @@ public class HeapPriorityQueue<K extends Comparable<K>, V> extends AbstractPrior
         if (list.isEmpty()) {
             return null;
         }
-        return list.first();
+        return list.get(0);
     }
 
     @Override
@@ -138,6 +138,7 @@ public class HeapPriorityQueue<K extends Comparable<K>, V> extends AbstractPrior
         }
         Entry<K, V> temp = list.get(0);
         swap(0, list.size() - 1);
+        list.remove(list.size() - 1);
         downHeap(0);
         return temp;
     }
