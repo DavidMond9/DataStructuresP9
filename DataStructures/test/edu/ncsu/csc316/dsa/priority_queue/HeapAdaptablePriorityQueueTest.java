@@ -20,7 +20,7 @@ import edu.ncsu.csc316.dsa.priority_queue.PriorityQueue.Entry;
  */
 public class HeapAdaptablePriorityQueueTest {
 
-    private HeapAdaptablePriorityQueue<Integer,String> heap;
+    private HeapAdaptablePriorityQueue<Integer, String> heap;
     
     /**
      * Create a new instance of a heap before each test case executes
