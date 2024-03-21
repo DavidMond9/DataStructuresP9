@@ -39,14 +39,7 @@ public class HeapAdaptablePriorityQueueTest {
         assertEquals(0, heap.size());
         
         Entry<Integer, String> e8 = heap.insert(8, "eight");
-        Entry<Integer, String> e7 = heap.insert(7, "seven");
-        Entry<Integer, String> e6 = heap.insert(6, "six");
-        Entry<Integer, String> e5 = heap.insert(5, "five");
-        Entry<Integer, String> e4 = heap.insert(4, "four");
-        Entry<Integer, String> e3 = heap.insert(3, "three");
-        Entry<Integer, String> e2 = heap.insert(2, "two");
-        Entry<Integer, String> e1 = heap.insert(1, "one");
-        Entry<Integer, String> e0 = heap.insert(0, "zero");
+
         assertEquals(9, heap.size());
         
         heap.replaceKey(e8,  -5);
@@ -64,14 +57,7 @@ public class HeapAdaptablePriorityQueueTest {
         assertEquals(0, heap.size());
         
         Entry<Integer, String> e8 = heap.insert(8, "eight");
-        Entry<Integer, String> e7 = heap.insert(7, "seven");
-        Entry<Integer, String> e6 = heap.insert(6, "six");
-        Entry<Integer, String> e5 = heap.insert(5, "five");
-        Entry<Integer, String> e4 = heap.insert(4, "four");
-        Entry<Integer, String> e3 = heap.insert(3, "three");
-        Entry<Integer, String> e2 = heap.insert(2, "two");
-        Entry<Integer, String> e1 = heap.insert(1, "one");
-        Entry<Integer, String> e0 = heap.insert(0, "zero");
+
         assertEquals(9, heap.size());
         
         heap.replaceValue(e8,  "EIGHT");
@@ -88,15 +74,7 @@ public class HeapAdaptablePriorityQueueTest {
     public void testRemove() {
         assertTrue(heap.isEmpty());
         assertEquals(0, heap.size());
-        
-        Entry<Integer, String> e8 = heap.insert(8, "eight");
-        Entry<Integer, String> e7 = heap.insert(7, "seven");
-        Entry<Integer, String> e6 = heap.insert(6, "six");
-        Entry<Integer, String> e5 = heap.insert(5, "five");
-        Entry<Integer, String> e4 = heap.insert(4, "four");
-        Entry<Integer, String> e3 = heap.insert(3, "three");
-        Entry<Integer, String> e2 = heap.insert(2, "two");
-        Entry<Integer, String> e1 = heap.insert(1, "one");
+
         Entry<Integer, String> e0 = heap.insert(0, "zero");
         assertEquals(9, heap.size());
         

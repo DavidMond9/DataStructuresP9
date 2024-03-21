@@ -5,7 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 import edu.ncsu.csc316.dsa.data.Student;
 import edu.ncsu.csc316.dsa.data.StudentIDComparator;
-import edu.ncsu.csc316.dsa.priority_queue.PriorityQueue.Entry;
 
 /**
  * Test class for HeapPriorityQueue
