@@ -135,7 +135,7 @@ public abstract class AbstractPriorityQueue<K extends Comparable<K>, V> implemen
      * 
      * @param key   the key (priority) for the new PQEntry
      * @param value the value for the new PQEntry
-     * @return
+     * @return returns new entry
      */
     protected Entry<K, V> createEntry(K key, V value) {
         return new PQEntry<K, V>(key, value);

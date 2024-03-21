@@ -24,7 +24,7 @@ public class HeapPriorityQueueTest {
      */     
     @Before
     public void setUp() {
-        heap = new HeapPriorityQueue<Integer,String>();
+        heap = new HeapPriorityQueue<Integer, String>();
     }
     
     /**
@@ -101,12 +101,12 @@ public class HeapPriorityQueueTest {
      */ 
     @Test
     public void testStudentHeap() {
-        PriorityQueue<Student,String> sHeap = new HeapPriorityQueue<Student, String>(new StudentIDComparator());
-        Student s1 = new Student("J","K", 1, 1, 1, "jk1");
-        Student s2 = new Student("J","S", 2, 1, 2, "js2");
-        Student s3 = new Student("S","H", 3, 1, 3, "sh3");
-        Student s4 = new Student("J","J", 4, 1, 4, "jj4");
-        Student s5 = new Student("L","B", 5, 1, 5, "lb5");
+        PriorityQueue<Student, String> sHeap = new HeapPriorityQueue<Student, String>(new StudentIDComparator());
+        Student s1 = new Student("J", "K", 1, 1, 1, "jk1");
+        Student s2 = new Student("J", "S", 2, 1, 2, "js2");
+        Student s3 = new Student("S", "H", 3, 1, 3, "sh3");
+        Student s4 = new Student("J", "J", 4, 1, 4, "jj4");
+        Student s5 = new Student("L", "B", 5, 1, 5, "lb5");
         
         assertTrue(sHeap.isEmpty());
         assertEquals(0, sHeap.size());
